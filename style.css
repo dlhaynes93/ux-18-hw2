@@ -1,0 +1,166 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+  }
+
+
+.inline {
+    display: inline;
+    background-color: white;
+    padding: 0px;
+  }
+
+  .navop {
+    display: inline;
+    float: right;
+    padding-right: 30px;
+  }
+
+.logo {
+    display: inline;
+    height: 120px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-position: flex-start;
+  }
+
+  #Heroimgpic {
+    display: flex;
+    background-image: url(/images/hero\ image\ .png);
+    background-position: left;
+    height: 930px;
+    flex-direction: row;
+    
+  }
+
+  #text{
+    display: flex;
+    align-items: center; 
+    padding-left: 200px;
+    
+    
+  }
+
+  #para{
+    display: flex;
+    align-items: center; 
+    padding-right: 700px;
+    padding-top: 50px ;
+  }
+
+.skillsec{
+  float: left;
+  padding-left: 15px;
+}
+
+.button{
+  color: grey;
+  cursor: pointer;
+  font-size: 10px;
+  text-align: center;
+  padding-left: 15px;
+  width: 70px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-color: black;
+  transition: all;
+}
+
+.button:hover {
+  background-color: rgb(78, 85, 67);
+  transform: scale(2)
+}
+
+#workgrid {
+  margin: 0px 5%;
+  display: grid;
+  min-height: 80px;
+  height: 50vh;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "Baga Stepdaddy"
+  "Baga Stepdaddy";
+}
+
+#Baga {
+  grid-area: Baga;
+  background-image: url("../images/BAGA.png");
+}
+
+#Stepdaddy {
+  grid-area: Stepdaddy;
+  background-image: url("../images/Step daddy.png");
+}
+
+#STEPD {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid ;
+  position: absolute;
+  right: 30px;
+  top: 100px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+#BAGA {
+  background-color: rgba(255,255,255,0.8);
+  border-bottom: 5px solid ;
+  position: absolute;
+  right: 50px;
+  top: 110px;
+  padding: 25px;
+  max-width: 550px;
+  z-index: 100;
+}
+
+.projects {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    height: 100px;
+    padding-top: 20px;
+
+  }
+
+ @media only screen and  (max-width: 600){
+  #Heroimgpic {
+    display: flex;
+    background-image: url("../images/hero image .png");
+    background-position: left;
+    height: 930px;
+    flex-direction: column;
+    
+  }
+
+  #workgrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 80px;
+    height: 50vh;
+    grid-template-rows:
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    
+    "Baga" 
+    "Baga"
+    "Stepdaddy"
+    "Stepdaddy";
+  }
+  }
+
+
+
+  .footer
